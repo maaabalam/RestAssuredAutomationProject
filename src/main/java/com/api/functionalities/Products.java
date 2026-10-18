@@ -11,4 +11,8 @@ public class Products extends BaseServiceConfig{
 	public Response addProducts(ProductAddRequest payload) {
 		return postrequest(payload, BASE_PATH + "add");
 	}
+	
+	public Response getProducts(String resource) {
+		return getrequest(BASE_PATH + resource);
+	}
 }
