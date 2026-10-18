@@ -1,317 +1,246 @@
 package com.api.models.response;
 
+
 public class UserProfileResponse {
 
-	    private String id;
-	    private String firstName;
-	    private String lastName;
-	    private String maidenName;
-	    private String age;
-	    private String gender;
-	    private String email;
-	    private String phone;
-	    private String username;
-	    private String password;
-	    private String birthDate;
-	    private String image;
-	    private String bloodGroup;
-	    private String height;
-	    private String weight;
-	    private String eyeColor;
-	    private String hair;
-	    private String ip;
-	    private String address;
-	    private String country;
-	    private String macAddress;
-	    private String university;
-	    private String bank;
-	    private String company;
-	    private String ein;
-	    private String ssn;
-	    private String userAgent;
-	    private String crypto;
-	    private String role;
-	    
-	    public UserProfileResponse(String id, String firstName, String lastName, String maidenName, String age,
-				String gender, String email, String phone, String username, String password, String birthDate,
-				String image, String bloodGroup, String height, String weight, String eyeColor, String hair, String ip,
-				String address, String country, String macAddress, String university, String bank, String company,
-				String ein, String ssn, String userAgent, String crypto, String role) {
-			super();
-			this.id = id;
-			this.firstName = firstName;
-			this.lastName = lastName;
-			this.maidenName = maidenName;
-			this.age = age;
-			this.gender = gender;
-			this.email = email;
-			this.phone = phone;
-			this.username = username;
-			this.password = password;
-			this.birthDate = birthDate;
-			this.image = image;
-			this.bloodGroup = bloodGroup;
-			this.height = height;
-			this.weight = weight;
-			this.eyeColor = eyeColor;
-			this.hair = hair;
-			this.ip = ip;
-			this.address = address;
-			this.country = country;
-			this.macAddress = macAddress;
-			this.university = university;
-			this.bank = bank;
-			this.company = company;
-			this.ein = ein;
-			this.ssn = ssn;
-			this.userAgent = userAgent;
-			this.crypto = crypto;
-			this.role = role;
-		}
+    private int id;
+    private String firstName;
+    private String lastName;
+    private String maidenName;
+    private int age;
+    private String gender;
+    private String email;
+    private String phone;
+    private String username;
+    private String password;
+    private String birthDate;
+    private String image;
+    private String bloodGroup;
+    private double height;
+    private double weight;
+    private String eyeColor;
+    private Hair hair;
+    private String ip;
+    private Address address;
+    private String macAddress;
+    private String university;
+    private Bank bank;
+    private Company company;
+    private String ein;
+    private String ssn;
+    private String userAgent;
+    private Crypto crypto;
+    private String role;
 
-		public String getId() {
-			return id;
-		}
+    // Default Constructor
+    public UserProfileResponse() {}
 
-		public void setId(String id) {
-			this.id = id;
-		}
+    // Getters and Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-		public String getFirstName() {
-			return firstName;
-		}
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-		public void setFirstName(String firstName) {
-			this.firstName = firstName;
-		}
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-		public String getLastName() {
-			return lastName;
-		}
+    public String getMaidenName() { return maidenName; }
+    public void setMaidenName(String maidenName) { this.maidenName = maidenName; }
 
-		public void setLastName(String lastName) {
-			this.lastName = lastName;
-		}
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
 
-		public String getMaidenName() {
-			return maidenName;
-		}
+    public String getGender() { return gender; }
+    public void setGender(String gender) { this.gender = gender; }
 
-		public void setMaidenName(String maidenName) {
-			this.maidenName = maidenName;
-		}
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-		public String getAge() {
-			return age;
-		}
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
 
-		public void setAge(String age) {
-			this.age = age;
-		}
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
 
-		public String getGender() {
-			return gender;
-		}
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
 
-		public void setGender(String gender) {
-			this.gender = gender;
-		}
+    public String getBirthDate() { return birthDate; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
 
-		public String getEmail() {
-			return email;
-		}
+    public String getImage() { return image; }
+    public void setImage(String image) { this.image = image; }
 
-		public void setEmail(String email) {
-			this.email = email;
-		}
+    public String getBloodGroup() { return bloodGroup; }
+    public void setBloodGroup(String bloodGroup) { this.bloodGroup = bloodGroup; }
 
-		public String getPhone() {
-			return phone;
-		}
+    public double getHeight() { return height; }
+    public void setHeight(double height) { this.height = height; }
 
-		public void setPhone(String phone) {
-			this.phone = phone;
-		}
+    public double getWeight() { return weight; }
+    public void setWeight(double weight) { this.weight = weight; }
 
-		public String getUsername() {
-			return username;
-		}
+    public String getEyeColor() { return eyeColor; }
+    public void setEyeColor(String eyeColor) { this.eyeColor = eyeColor; }
 
-		public void setUsername(String username) {
-			this.username = username;
-		}
+    public Hair getHair() { return hair; }
+    public void setHair(Hair hair) { this.hair = hair; }
 
-		public String getPassword() {
-			return password;
-		}
+    public String getIp() { return ip; }
+    public void setIp(String ip) { this.ip = ip; }
 
-		public void setPassword(String password) {
-			this.password = password;
-		}
+    public Address getAddress() { return address; }
+    public void setAddress(Address address) { this.address = address; }
 
-		public String getBirthDate() {
-			return birthDate;
-		}
+    public String getMacAddress() { return macAddress; }
+    public void setMacAddress(String macAddress) { this.macAddress = macAddress; }
 
-		public void setBirthDate(String birthDate) {
-			this.birthDate = birthDate;
-		}
+    public String getUniversity() { return university; }
+    public void setUniversity(String university) { this.university = university; }
 
-		public String getImage() {
-			return image;
-		}
+    public Bank getBank() { return bank; }
+    public void setBank(Bank bank) { this.bank = bank; }
 
-		public void setImage(String image) {
-			this.image = image;
-		}
+    public Company getCompany() { return company; }
+    public void setCompany(Company company) { this.company = company; }
 
-		public String getBloodGroup() {
-			return bloodGroup;
-		}
+    public String getEin() { return ein; }
+    public void setEin(String ein) { this.ein = ein; }
 
-		public void setBloodGroup(String bloodGroup) {
-			this.bloodGroup = bloodGroup;
-		}
+    public String getSsn() { return ssn; }
+    public void setSsn(String ssn) { this.ssn = ssn; }
 
-		public String getHeight() {
-			return height;
-		}
+    public String getUserAgent() { return userAgent; }
+    public void setUserAgent(String userAgent) { this.userAgent = userAgent; }
 
-		public void setHeight(String height) {
-			this.height = height;
-		}
+    public Crypto getCrypto() { return crypto; }
+    public void setCrypto(Crypto crypto) { this.crypto = crypto; }
 
-		public String getWeight() {
-			return weight;
-		}
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
 
-		public void setWeight(String weight) {
-			this.weight = weight;
-		}
+    // --- Inner Classes Representing Sub-Objects ---
 
-		public String getEyeColor() {
-			return eyeColor;
-		}
+    public static class Hair {
+        private String color;
+        private String type;
 
-		public void setEyeColor(String eyeColor) {
-			this.eyeColor = eyeColor;
-		}
+        public Hair() {}
 
-		public String getHair() {
-			return hair;
-		}
+        public String getColor() { return color; }
+        public void setColor(String color) { this.color = color; }
 
-		public void setHair(String hair) {
-			this.hair = hair;
-		}
+        public String getType() { return type; }
+        public void setType(String type) { this.type = type; }
+    }
 
-		public String getIp() {
-			return ip;
-		}
+    public static class Coordinates {
+        private double lat;
+        private double lng;
 
-		public void setIp(String ip) {
-			this.ip = ip;
-		}
+        public Coordinates() {}
 
-		public String getAddress() {
-			return address;
-		}
+        public double getLat() { return lat; }
+        public void setLat(double lat) { this.lat = lat; }
 
-		public void setAddress(String address) {
-			this.address = address;
-		}
+        public double getLng() { return lng; }
+        public void setLng(double lng) { this.lng = lng; }
+    }
 
-		public String getCountry() {
-			return country;
-		}
+    public static class Address {
+        private String address;
+        private String city;
+        private String state;
+        private String stateCode;
+        private String postalCode;
+        private Coordinates coordinates;
+        private String country;
 
-		public void setCountry(String country) {
-			this.country = country;
-		}
+        public Address() {}
 
-		public String getMacAddress() {
-			return macAddress;
-		}
+        public String getAddress() { return address; }
+        public void setAddress(String address) { this.address = address; }
 
-		public void setMacAddress(String macAddress) {
-			this.macAddress = macAddress;
-		}
+        public String getCity() { return city; }
+        public void setCity(String city) { this.city = city; }
 
-		public String getUniversity() {
-			return university;
-		}
+        public String getState() { return state; }
+        public void setState(String state) { this.state = state; }
 
-		public void setUniversity(String university) {
-			this.university = university;
-		}
+        public String getStateCode() { return stateCode; }
+        public void setStateCode(String stateCode) { this.stateCode = stateCode; }
 
-		public String getBank() {
-			return bank;
-		}
+        public String getPostalCode() { return postalCode; }
+        public void setPostalCode(String postalCode) { this.postalCode = postalCode; }
 
-		public void setBank(String bank) {
-			this.bank = bank;
-		}
+        public Coordinates getCoordinates() { return coordinates; }
+        public void setCoordinates(Coordinates coordinates) { this.coordinates = coordinates; }
 
-		public String getCompany() {
-			return company;
-		}
+        public String getCountry() { return country; }
+        public void setCountry(String country) { this.country = country; }
+    }
 
-		public void setCompany(String company) {
-			this.company = company;
-		}
+    public static class Bank {
+        private String cardExpire;
+        private String cardNumber;
+        private String cardType;
+        private String currency;
+        private String iban;
 
-		public String getEin() {
-			return ein;
-		}
+        public Bank() {}
 
-		public void setEin(String ein) {
-			this.ein = ein;
-		}
+        public String getCardExpire() { return cardExpire; }
+        public void setCardExpire(String cardExpire) { this.cardExpire = cardExpire; }
 
-		public String getSsn() {
-			return ssn;
-		}
+        public String getCardNumber() { return cardNumber; }
+        public void setCardNumber(String cardNumber) { this.cardNumber = cardNumber; }
 
-		public void setSsn(String ssn) {
-			this.ssn = ssn;
-		}
+        public String getCardType() { return cardType; }
+        public void setCardType(String cardType) { this.cardType = cardType; }
 
-		public String getUserAgent() {
-			return userAgent;
-		}
+        public String getCurrency() { return currency; }
+        public void setCurrency(String currency) { this.currency = currency; }
 
-		public void setUserAgent(String userAgent) {
-			this.userAgent = userAgent;
-		}
+        public String getIban() { return iban; }
+        public void setIban(String iban) { this.iban = iban; }
+    }
 
-		public String getCrypto() {
-			return crypto;
-		}
+    public static class Company {
+        private String department;
+        private String name;
+        private String title;
+        private Address address;
 
-		public void setCrypto(String crypto) {
-			this.crypto = crypto;
-		}
+        public Company() {}
 
-		public String getRole() {
-			return role;
-		}
+        public String getDepartment() { return department; }
+        public void setDepartment(String department) { this.department = department; }
 
-		public void setRole(String role) {
-			this.role = role;
-		}
+        public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
 
-		@Override
-		public String toString() {
-			return "UserProfileResponse [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName
-					+ ", maidenName=" + maidenName + ", age=" + age + ", gender=" + gender + ", email=" + email
-					+ ", phone=" + phone + ", username=" + username + ", password=" + password + ", birthDate="
-					+ birthDate + ", image=" + image + ", bloodGroup=" + bloodGroup + ", height=" + height + ", weight="
-					+ weight + ", eyeColor=" + eyeColor + ", hair=" + hair + ", ip=" + ip + ", address=" + address
-					+ ", country=" + country + ", macAddress=" + macAddress + ", university=" + university + ", bank="
-					+ bank + ", company=" + company + ", ein=" + ein + ", ssn=" + ssn + ", userAgent=" + userAgent
-					+ ", crypto=" + crypto + ", role=" + role + "]";
-		}
-		
-	
+        public String getTitle() { return title; }
+        public void setTitle(String title) { this.title = title; }
+
+        public Address getAddress() { return address; }
+        public void setAddress(Address address) { this.address = address; }
+    }
+
+    public static class Crypto {
+        private String coin;
+        private String wallet;
+        private String network;
+
+        public Crypto() {}
+
+        public String getCoin() { return coin; }
+        public void setCoin(String coin) { this.coin = coin; }
+
+        public String getWallet() { return wallet; }
+        public void setWallet(String wallet) { this.wallet = wallet; }
+
+        public String getNetwork() { return network; }
+        public void setNetwork(String network) { this.network = network; }
+    }
 }

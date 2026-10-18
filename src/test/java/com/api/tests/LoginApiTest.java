@@ -38,10 +38,11 @@ public class LoginApiTest {
 		System.out.println(response.asPrettyString());
 		UserProfileResponse loginresponse2 = response.as(UserProfileResponse.class);
 		
-		System.out.println(loginresponse2.getEmail());
-		System.out.println(loginresponse2.getFirstName());
-		System.out.println(loginresponse2.getGender());
-		System.out.println(loginresponse2.getLastName());
+		System.out.println("Email " +loginresponse2.getEmail());
+		System.out.println("First Name " +loginresponse2.getFirstName());
+		System.out.println("Gender " +loginresponse2.getGender());
+		System.out.println("Hair color :"+loginresponse2.getHair().getColor());
+		System.out.println("Address coordinate lat :"+loginresponse2.getAddress().getCoordinates().getLat());
 	}
 	
 }
