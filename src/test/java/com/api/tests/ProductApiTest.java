@@ -2,7 +2,6 @@ package com.api.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import static org.hamcrest.Matchers.*;
 
 import com.api.functionalities.Products;
 import com.api.models.request.ProductAddRequest;
